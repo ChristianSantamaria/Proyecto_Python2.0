@@ -1,0 +1,269 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ES">
+  <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Codigo &#8212; documentación de Mascotas - DI</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="prev" title="Instrucciones a seguir" href="Instrucciones.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Índice General"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Índice de Módulos Python"
+             >módulos</a> |</li>
+        <li class="right" >
+          <a href="Instrucciones.html" title="Instrucciones a seguir"
+             accesskey="P">anterior</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">documentación de Mascotas - DI</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-MascotasPrincipal">
+<span id="codigo"></span><h1>Codigo<a class="headerlink" href="#module-MascotasPrincipal" title="Enlazar permanentemente con este título">¶</a></h1>
+<dl class="class">
+<dt id="MascotasPrincipal.MascotasClientes">
+<em class="property">class </em><code class="descclassname">MascotasPrincipal.</code><code class="descname">MascotasClientes</code><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasClientes"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasClientes" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Pestaña de gestion del cliente</p>
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasClientes.cargar_dni_cliente">
+<code class="descname">cargar_dni_cliente</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasClientes.cargar_dni_cliente"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasClientes.cargar_dni_cliente" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion la cual se lanza al crear o entrar en la seccion de clientes para cargar todos los dnis de los clientes actuales
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasClientes.nif">
+<code class="descname">nif</code><span class="sig-paren">(</span><em>nif</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasClientes.nif"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasClientes.nif" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion para validar un dni devuelva true si es valido en el caso que no fuese valido false
+:param nif:
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasClientes.on_borrar_cliente">
+<code class="descname">on_borrar_cliente</code><span class="sig-paren">(</span><em>button</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasClientes.on_borrar_cliente"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasClientes.on_borrar_cliente" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion que al seleccionar el dni de un cliente te pregunta si estas seguro y si lo estas lo elimina
+:param button:
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasClientes.on_country_combo_changed">
+<code class="descname">on_country_combo_changed</code><span class="sig-paren">(</span><em>combo</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasClientes.on_country_combo_changed"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasClientes.on_country_combo_changed" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion que al selecionar un valor del combobox carguen todos los datos del cliente segun el dni selecionado
+:param combo:
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasClientes.on_crear_cliente">
+<code class="descname">on_crear_cliente</code><span class="sig-paren">(</span><em>button</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasClientes.on_crear_cliente"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasClientes.on_crear_cliente" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion la cual recoge todos los valores del cliente llama a la base de datos y si no hay ningun valor en blanco y el dni es correcto lo inserta
+:param button:
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasClientes.on_modificar_cliente">
+<code class="descname">on_modificar_cliente</code><span class="sig-paren">(</span><em>button</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasClientes.on_modificar_cliente"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasClientes.on_modificar_cliente" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion la cual recoge los nuevos valores añadidos y si no estan en blanco los actualiza en la base de datos
+:param button:
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasClientes.verificacion">
+<code class="descname">verificacion</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasClientes.verificacion"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasClientes.verificacion" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion la cual se lanza en el momento de borrar un cliente dandote a elegir entre si u no
+:return:</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="MascotasPrincipal.MascotasListado">
+<em class="property">class </em><code class="descclassname">MascotasPrincipal.</code><code class="descname">MascotasListado</code><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasListado"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasListado" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Pestaña del listado de todos los clientes y mascotas</p>
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasListado.on_changed">
+<code class="descname">on_changed</code><span class="sig-paren">(</span><em>selection</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasListado.on_changed"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasListado.on_changed" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion la cual se activa cuando seleccionamos un cliente en la tabla de cliente para que carge las mascotas del propio cliente
+:param selection:
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasListado.on_crear_informe">
+<code class="descname">on_crear_informe</code><span class="sig-paren">(</span><em>button</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasListado.on_crear_informe"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasListado.on_crear_informe" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion para generar el informe con todos los datos de clientes y sus mascotas
+:param button:
+:return:</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="MascotasPrincipal.MascotasPrincipal">
+<em class="property">class </em><code class="descclassname">MascotasPrincipal.</code><code class="descname">MascotasPrincipal</code><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasPrincipal"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasPrincipal" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Pestaña principal</p>
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasPrincipal.on_boton_clientes">
+<code class="descname">on_boton_clientes</code><span class="sig-paren">(</span><em>button</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasPrincipal.on_boton_clientes"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasPrincipal.on_boton_clientes" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Boton que da paso a la ventana de gestion de cliente</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasPrincipal.on_boton_listado">
+<code class="descname">on_boton_listado</code><span class="sig-paren">(</span><em>button</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasPrincipal.on_boton_listado"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasPrincipal.on_boton_listado" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Boton que da paso a la ventana de listado</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasPrincipal.on_boton_mascotas">
+<code class="descname">on_boton_mascotas</code><span class="sig-paren">(</span><em>button</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasPrincipal.on_boton_mascotas"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasPrincipal.on_boton_mascotas" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Boton que da paso a la ventana de gestion de mascotas</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasPrincipal.on_boton_salir">
+<code class="descname">on_boton_salir</code><span class="sig-paren">(</span><em>button</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasPrincipal.on_boton_salir"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasPrincipal.on_boton_salir" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Boton que da paso salir</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="MascotasPrincipal.MascotasRegistro">
+<em class="property">class </em><code class="descclassname">MascotasPrincipal.</code><code class="descname">MascotasRegistro</code><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasRegistro"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasRegistro" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Pestaña de gestion de las Mascotas</p>
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasRegistro.cargar_dni_cliente">
+<code class="descname">cargar_dni_cliente</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasRegistro.cargar_dni_cliente"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasRegistro.cargar_dni_cliente" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion que carga todos los usuarios de la aplicacion si ya hay una base de datos creada si no la crea nueva</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasRegistro.cargar_id_mascota">
+<code class="descname">cargar_id_mascota</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasRegistro.cargar_id_mascota"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasRegistro.cargar_id_mascota" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Carga todas las mascotas de la aplicacion si ya hay una base de datos creada si no la crea nueva</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasRegistro.on_borrar_mascota">
+<code class="descname">on_borrar_mascota</code><span class="sig-paren">(</span><em>button</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasRegistro.on_borrar_mascota"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasRegistro.on_borrar_mascota" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion en la que elimina todos los datos de la mascota selecionada por el id</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasRegistro.on_country_combo_changed2">
+<code class="descname">on_country_combo_changed2</code><span class="sig-paren">(</span><em>combo</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasRegistro.on_country_combo_changed2"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasRegistro.on_country_combo_changed2" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion que se lanza al pinchar un valor de la combobox entonces hace una busqueda en la que busca todas la mascota con el ID que selecione.
+Acto seguido carga los datos de la mascota y los muestra</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasRegistro.on_country_combo_changed3">
+<code class="descname">on_country_combo_changed3</code><span class="sig-paren">(</span><em>combo</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasRegistro.on_country_combo_changed3"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasRegistro.on_country_combo_changed3" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion que se lanza al pinchar un valor de la combobox y seleciona el valor</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasRegistro.on_crear_mascota">
+<code class="descname">on_crear_mascota</code><span class="sig-paren">(</span><em>button</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasRegistro.on_crear_mascota"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasRegistro.on_crear_mascota" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion en la que recoge todos los datos de la mascota, comprueba que no esten vacios
+y lo añade a la base de datos mascotas en el caso que la base este creada sino se crea y se añade
+a la mascota</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasRegistro.on_modificar_mascota">
+<code class="descname">on_modificar_mascota</code><span class="sig-paren">(</span><em>button</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasRegistro.on_modificar_mascota"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasRegistro.on_modificar_mascota" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion en la que recoge todos los datos nuevos de la mascota, comprueba que no esten vacios
+y los modifica a la base de datos mascotas en el caso que la base este creada sino se crea y se añade
+a la mascota</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="MascotasPrincipal.MascotasRegistro.verificacion">
+<code class="descname">verificacion</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/MascotasPrincipal.html#MascotasRegistro.verificacion"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#MascotasPrincipal.MascotasRegistro.verificacion" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Funcion para preguntar al usuario si quiere eliminar de la base de datos una mascota</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Tema anterior</h4>
+  <p class="topless"><a href="Instrucciones.html"
+                        title="capítulo anterior">Instrucciones a seguir</a></p>
+  <div role="note" aria-label="source link">
+    <h3>Esta página</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Codigo.rst.txt"
+            rel="nofollow">Mostrar el código</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Ir a" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Índice General"
+             >índice</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Índice de Módulos Python"
+             >módulos</a> |</li>
+        <li class="right" >
+          <a href="Instrucciones.html" title="Instrucciones a seguir"
+             >anterior</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">documentación de Mascotas - DI</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Derechos de autor 2018, Christian.
+      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.0.
+    </div>
+  </body>
+</html>

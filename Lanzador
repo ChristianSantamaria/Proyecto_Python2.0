@@ -1,0 +1,7 @@
+#!usr/bin/python3
+from Paquete import MascotasPrincipal
+from gi.repository import Gtk
+
+MascotasPrincipal.MascotasPrincipal()
+Gtk.main()
+

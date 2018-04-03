@@ -1,0 +1,7 @@
+MascotasPrincipal module
+========================
+
+.. automodule:: MascotasPrincipal
+    :members:
+    :undoc-members:
+    :show-inheritance:
